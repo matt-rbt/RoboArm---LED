@@ -1,8 +1,15 @@
 from machine import Pin
-import time
 
-led = Pin(5, Pin.OUT)
+led = Pin(15, Pin.OUT)
 
 while True:
-    led.toggle()
-    time.sleep(0.5)
+    line = input().strip()
+
+    if line == "LED ON":
+        led.value(1)
+        print("OK")
+    elif line == "LED OFF":
+        led.value(0)
+        print("OK")
+    else:
+        print("ERR unknown command")

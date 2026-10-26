@@ -23,7 +23,7 @@
     }
   ],
   "connections": [
-    [ "pico:GP5", "led1:A", "green", [ "h0" ] ],
+    [ "pico:GP15", "led1:A", "green", [ "h0" ] ],
     [ "pico:GND.2", "led1:C", "black", [ "h0" ] ]
   ]
 }
